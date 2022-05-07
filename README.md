@@ -44,5 +44,5 @@
 - Apporachability
         If it is approachable then beginner developer can easily jump on the band wagon and start developing their DAPP.
 
-_ Developer Experience
+- Developer Experience
         I mean no body wants to filp their finger to the code everytime something goes wrong.
