@@ -36,13 +36,13 @@
 2. In your opinion, even without knowing anything about the Blockchain or coding, why could the 5 Pillars be useful (you don't have to answer this for #5)?
 
 - Safety & Security
-        Safety and Security can help programmer to write code without worrying about different gotchas and vulnerability.
+       <br/> Safety and Security can help programmer to write code without worrying about different gotchas and vulnerability.
         
 - Clarity
-        Cliarity helps increase the readability of the code so everyone can easily understand how the code is working.
+       <br/> Cliarity helps increase the readability of the code so everyone can easily understand how the code is working.
         
 - Apporachability
-        If it is approachable then beginner developer can easily jump on the band wagon and start developing their DAPP.
+       <br/> If it is approachable then beginner developer can easily jump on the band wagon and start developing their DAPP.
 
 - Developer Experience
-        I mean no body wants to filp their finger to the code everytime something goes wrong.
+        <br/>I mean no body wants to filp their finger to the code everytime something goes wrong.
