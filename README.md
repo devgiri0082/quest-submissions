@@ -58,3 +58,38 @@
 2. Check that your variable is actually equals "the best" by executing a script to read that variable. Include a screenshot of the output.
 
 <img src='./Images/JacobTucker Execution.png'/>
+
+<hr/>
+
+## Chapter 2 day 2 quests
+
+u1. Explain why we wouldn't call `changeGreeting` in a `script`.
+
+- `changeGreeting` function changes the value of greeting but we can only use `script` to fetch the value from blockchain not change it so we would not call `changeGreeting` in a `script`.
+
+2. What does the `AuthAccount` mean in the prepare phase of the transaction?
+  
+- `AuthAccount` simply account of the authenticated user or account of the user who is signing the transaction
+
+3. What is the difference between the `prepare` phase and the `execute` phase in the transaction?
+
+- `prepare` can change access the information/data from the `AuthAccount` while `execute` can call functions
+
+4. This is the hardest quest so far, so if it takes you some time, do not worry! I can help you in the Discord if you have questions.
+
+- Wrapping the head around `prepare` and `execute` and wrapping the concept of account storing it's own data was pretty difficult to me.
+
+- Add two new things inside your contract:
+    - A variable named `myNumber` that has type `Int` (set it to 0 when the contract is deployed)
+    - A function named `updateMyNumber` that takes in a new number named `newNumber` as a parameter that has type `Int` and updates `myNumber` to be `newNumber`
+
+<img src ='/Images/myNumber.png'/>
+
+- Add a script that reads `myNumber` from the contract
+  
+  <img src='/Images/myNumberScript.png'/>
+
+- Add a transaction that takes in a parameter named `myNewNumber` and passes it into the `updateMyNumber` function. Verify that your number changed by running the script again.
+
+<img src='./Images/myNumberTransaction.png'/>
+<img src='./Images/myNumberScript2.png'>
