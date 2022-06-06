@@ -93,3 +93,30 @@ u1. Explain why we wouldn't call `changeGreeting` in a `script`.
 
 <img src='./Images/myNumberTransaction.png'/>
 <img src='./Images/myNumberScript2.png'>
+
+<hr/>
+
+## Chapter 2 day 3 quests
+
+1. In a script, initialize an array (that has length == 3) of your favourite people, represented as Strings, and log it.
+   
+<img src ="./Images/Array3.png"/>
+
+2. Explain what the force unwrap operator ! does, with an example different from the one I showed you (you can just change the type).
+
+<img src="./Images/forceUnwrapOperator.png"/>
+
+3. Explain what the force unwrap operator `!` does, with an example different from the one I showed you (you can just change the type).
+
+<img src="./Images/forceUnwrapOperator.png"/>
+
+1. Using this picture below, explain...
+    - What the error message means
+    - Why we're getting this error
+    - How to fix it
+
+<img src="./Images/wrongcode.png"/>
+
+   - Error message means the function was expecting a `String` as a return type but got string? 'String or nil'
+    - We are getting this error because the return type does not match expected return type which is `String` does not match the actual return value type which is `String?`
+    - We can fix it in two way either by using the `force unwrap operator` or by setting the expected return type of the function as optional string `String?`
