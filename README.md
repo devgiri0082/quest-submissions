@@ -120,3 +120,24 @@ u1. Explain why we wouldn't call `changeGreeting` in a `script`.
    - Error message means the function was expecting a `String` as a return type but got string? 'String or nil'
     - We are getting this error because the return type does not match expected return type which is `String` does not match the actual return value type which is `String?`
     - We can fix it in two way either by using the `force unwrap operator` or by setting the expected return type of the function as optional string `String?`
+
+<hr/>
+
+## Chapter 2 day 3 quests
+
+1. Deploy a new contract that has a Struct of your choosing inside of it (must be different than `Profile`).
+   
+   <img src="./Images/StructInitialize.png"/>
+
+2. Create a dictionary or array that contains the Struct you defined. 
+       <img src="./Images/StructInitialize.png"/>
+
+3. Create a function to add to that array/dictionary.
+        <img src="./Images/AddToStruct.png"/>
+
+
+4. Add a transaction to call that function in step 3.
+        <img src="./Images/TransactionToAddInStruct.png"/>
+
+5. Add a script to read the Struct you defined.
+        <img src="./Images/ScriptToGetStructData.png"/>
