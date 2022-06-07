@@ -220,3 +220,17 @@ pub contract Test {
 1. Write your own smart contract that contains two state variables: an array of resources, and a dictionary of resources. Add functions to remove and add to each of them. They must be different from the examples above.
 
 <img src='./Images/resourceInDict.png'/>
+
+<hr/>
+
+## Chapter 3 day 3 quests
+
+1. Define your own contract that stores a dictionary of resources. Add a function to get a reference to one of the resources in the dictionary.
+   <img src="./Images/ReferrenceInResource.png"/>
+
+
+2. Create a script that reads information from that resource using the reference from the function you defined in part 1. 
+   <img src="./Images/GetReferrenceScript.png"/>
+
+3. Explain, in your own words, why references can be useful in Cadence.
+   - moving a `resource` can be expensive when we just want to edit it and `references` gives us a way to edit `resource` without moving it.
