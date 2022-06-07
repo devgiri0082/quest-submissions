@@ -141,3 +141,82 @@ u1. Explain why we wouldn't call `changeGreeting` in a `script`.
 
 5. Add a script to read the Struct you defined.
         <img src="./Images/ScriptToGetStructData.png"/>
+
+<hr/>
+
+## Chapter 3 day 1 quests
+
+1. In words, list 3 reasons why structs are different from resources.
+   - Resources can not be copied while structs can be copied
+   - Resources are very secure
+   - Resources are very hard to loose
+   - we need to use `<-` operator to move the resource
+   - Resource can only be created inside a contract
+
+2. Describe a situation where a resource might be better to use than a struct.
+
+  When the data security is really important, loosing the data is not an option and we don't want anyone coping our data `resource` should be use instead of `struct`.
+
+3. What is the keyword to make a new resource?
+
+`create`
+
+4. Can a resource be created in a script or transaction (assuming there isn't a public function to create one)?
+   
+   No, we can only create a `resource` inside a contract.
+
+5. What is the type of the resource below?
+
+```javascript
+pub resource Jacob {
+
+}
+```
+
+`@Jacob`
+
+6. Let's play the "I Spy" game from when we were kids. I Spy 4 things wrong with this code. Please fix them.
+
+```javascript
+pub contract Test {
+
+    // Hint: There's nothing wrong here ;)
+    pub resource Jacob {
+        pub let rocks: Bool
+        init() {
+            self.rocks = true
+        }
+    }
+
+    pub fun createJacob(): Jacob { // there is 1 here
+        let myJacob = Jacob() // there are 2 here
+        return myJacob // there is 1 here
+    }
+}
+```
+Fix
+
+```javascript
+pub contract Test {
+
+    pub resource Jacob {
+        pub let rocks: Bool
+        init() {
+            self.rocks = true
+        }
+    }
+
+    pub fun createJacob(): @Jacob {
+        let myJacob <- create Jacob()
+        return <- myJacob
+    }
+}
+```
+
+<hr/>
+
+## Chapter 3 day 2 quests
+
+1. Write your own smart contract that contains two state variables: an array of resources, and a dictionary of resources. Add functions to remove and add to each of them. They must be different from the examples above.
+
+<img src='./Images/resourceInDict.png'/>
